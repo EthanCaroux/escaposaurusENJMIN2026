@@ -98,22 +98,25 @@ video{max-width: 960px;}
 }
 
 /*call app*/
-#callApp{
-	width:500px;
-	height:auto;
-	padding:0 0 0 0;
-	margin:50 100 12 50;
-	background-color:#fff;
-	border:2px solid black;
+#callApp {
+	width: 500px;
+	height: 400px;
+	padding: 0 0 0 0;
+	margin: 50 100 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
 	overflow: auto;
+	background: url("img/fichecontact.png") center no-repeat;
+	background-size: 100% 100%;
 }
 
 #callApp-help, #callApp-prompt{
 	font-size:18px;
 	padding:10px;
 	text-align: center;
-	background-color:#ccc;
+	#background-color:#ccc;
 	color:black;
+	margin-top : 100px;
 }
 
 .contact-list{
@@ -124,7 +127,7 @@ video{max-width: 960px;}
 .contact-div{
 	font-size:16px;
 	text-align: left;
-	margin-bottom:5px;
+	margin-bottom:50px;
 	font-weight: bold;
 }
 
@@ -135,9 +138,13 @@ video{max-width: 960px;}
 }
 
 .contact-avatar{
-	width:36px;
-	height:36px;
+	width:0px;
+	height:0px;
 	margin-right:5px;
+}
+
+.callApp-helperText{
+	color : black;
 }
 
 .no-call{

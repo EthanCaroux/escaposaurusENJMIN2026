@@ -291,19 +291,10 @@ function createContactList(){
 	while (nc.firstChild) {
 		nc.removeChild(nc.lastChild);
 	}
-	var hc = document.getElementById("help-contact") ;
-	while (hc.firstChild) {
-		hc.removeChild(hc.lastChild);
-	}
 
 	/*create normal contact*/
 	for(var i = 0 ; i < normalContacts.length ; i++){
 		createContact(normalContacts[i], nc) ;
-	}
-
-	/*create helper contact*/
-	for(var i = 0 ; i < helperContacts.length ; i++){
-		createContact(helperContacts[i], hc) ;
 	}
 }
 
@@ -329,6 +320,7 @@ function createContact(contact, parent){
 	im.classList.add("contact-avatar") ;
 
 	var sp = document.createElement("span") ;
+	sp.classList.add("callApp-helperText");
 	sp.innerHTML = contact.username ;
 
 	x.appendChild(im) ;
@@ -569,11 +561,6 @@ function win(){
 	var nc = document.getElementById("normal-contact") ;
 	while (nc.firstChild) {
 		nc.removeChild(nc.lastChild);
-	}
-	
-	var hc = document.getElementById("help-contact") ;
-	while (hc.firstChild) {
-		hc.removeChild(hc.lastChild);
 	}
 }
 
