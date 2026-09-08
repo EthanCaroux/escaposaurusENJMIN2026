@@ -1,4 +1,4 @@
-<!--
+
 /////////////////////////////////////////////////////////////
 /// Escaposaurus v1 (2020)
 ///	A quick and dirty framework to create small adventure game (certified vanilla JS)
@@ -6,7 +6,6 @@
 /// GitHub: https://github.com/RedNaK/escaposaurus
 ///	Licence: MIT
 ////////////////////////////////////////////////////////////
--->
 
 
 /*some needed initialization*/
@@ -189,10 +188,11 @@ function arborescence(folders, files, parent, fullpath){
 	if(folders !== null){
 		for (var i = 0; i < folders.length; i++){
 		    var obj = folders[i];
-		    //console.log("a folder" + obj.foldername) ;
+		    console.log("a folder" + obj.foldername) ;
 		    var password = (obj.password == undefined)?"":obj.password;
 		    var seqNumber = (obj.password == undefined)?"":obj.sequence;
-		    cFolder(obj.foldername, parent, password, seqNumber) ;
+			var squestion = (obj.squestion == undefined)?"":obj.squestion;
+		    cFolder(obj.foldername, parent, password, seqNumber,squestion) ;
 
 		    var fo = (obj.folders == undefined)?null:obj.folders ;
 		 	var fi = (obj.files == undefined)?null:obj.files ;
@@ -212,7 +212,7 @@ function arborescence(folders, files, parent, fullpath){
 }
 
 /*folder routine HTML*/
-function cFolder(name, parent, password, seqNumber){
+function cFolder(name, parent, password, seqNumber, squestion){
 	passwordCenter[name] = password ;
 	if(password != null){
 		sequenceFolder[seqNumber] = name ;
@@ -233,7 +233,7 @@ function cFolder(name, parent, password, seqNumber){
 	var elemA = document.createElement('a') ;
 	if(password != ""){
 		elemA.classList.add("protected-name") ;
-		elemA.setAttribute("onclick", "openPasswordPrompt('"+name+"')") ;
+		elemA.setAttribute("onclick", "openPasswordPrompt('"+name+"', '"+squestion+"')") ;
 	}else{
 		elemA.classList.add("folder-name") ;
 	}
@@ -400,7 +400,7 @@ function checkPassword(userTry, foldername){
 	}
 }
 
-function openPasswordPrompt(foldername){
+function openPasswordPrompt(foldername,question){
 	/*if the not now prompt is open, we close it*/
 	var p = document.getElementById("notnowPrompt-window") ;
 	if(!p.classList.contains('hidden')){
@@ -415,7 +415,7 @@ function openPasswordPrompt(foldername){
 		x.value = foldername ;
 
 		var d = document.getElementById("folderD") ;
-		d.innerHTML = foldername ;
+		d.innerHTML = question ;
 
 		var p = document.getElementById("passPrompt-window") ;
 		p.classList.remove("hidden") ;

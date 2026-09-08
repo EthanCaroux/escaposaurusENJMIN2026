@@ -1,4 +1,4 @@
-<!--
+
 /////////////////////////////////////////////////////////////
 /// Escapausorus v1 (2020)
 ///	A quick and dirty framework to create small adventure game (certified vanilla JS)
@@ -6,7 +6,7 @@
 /// GitHub: https://github.com/RedNaK/escaposaurus
 ///	Licence: MIT
 ////////////////////////////////////////////////////////////
--->
+
 
 	/*
 		HERE IS THE CONFIGURATION OF THE GAME
@@ -38,22 +38,22 @@
 	  	{"root":{
 	  		"folders":
 		  		[
-		  		{"foldername":"gaming",
-				  	"files":["20190509_316504.mp4"]
+		  		{"foldername":"Etape 1 : Référence",
+				  	"files":["20190509_316504.mp4",".20190509_316504mp4","20190509_316504.mp4","20190509_316504.mp4"]
 				},
-				{"foldername":"vieillescartespostales",
-						"files":["carte1.jpg", "carte2.jpg", "carte3.jpg", "carte4.jpg"]
-				},
-				{"foldername":"dcim","password":"forclaz","sequence":1,
-			  		"files":["20180807_103031.jpg", "20180807_114356.jpg", "20180807_123538.mp4"]
+				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel est le nom du guide qui à fait la vidéo de lappel a laide ?","password":"Tomesode","sequence":0,
+			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-			  	{"foldername":"itineraire2018",
-			  		"folders":[{"foldername":"perso", "files":["FXHT4438a.jpg","Screenshot20180701_Wanderplaner(1).jpg"],"password":"nata","sequence":0}]
+				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"saucisse","sequence":1,
+			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-			  	{"foldername":"itineraire2019", "password":"trient","sequence":2,
-			  		"files":["fortnitescreen.png", "swisstopo-screen.png"],
-			  		"folders":[{"foldername":"GPS", "files":["idgps.png"],"password":"wandfluehorn","sequence":3}]
-			  	}
+				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"saucisse","sequence":2,
+			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+			  	},
+				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Motif ?","password":"saucisse","sequence":3,
+			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+			  	},
+				
 		 		],
 			"files":[
 				"scan_memo.png"]}
