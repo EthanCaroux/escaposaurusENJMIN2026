@@ -191,8 +191,9 @@ function arborescence(folders, files, parent, fullpath){
 		    console.log("a folder" + obj.foldername) ;
 		    var password = (obj.password == undefined)?"":obj.password;
 		    var seqNumber = (obj.password == undefined)?"":obj.sequence;
-			var squestion = (obj.squestion == undefined)?"":obj.squestion;
-		    cFolder(obj.foldername, parent, password, seqNumber,squestion) ;
+			var squestion = (obj.squestion == undefined) ? "" : obj.squestion;
+			var othername = (obj.othername == undefined) ? "" : obj.othername;
+			cFolder(obj.foldername, parent, password, seqNumber, squestion, othername) ;
 
 		    var fo = (obj.folders == undefined)?null:obj.folders ;
 		 	var fi = (obj.files == undefined)?null:obj.files ;
@@ -212,7 +213,7 @@ function arborescence(folders, files, parent, fullpath){
 }
 
 /*folder routine HTML*/
-function cFolder(name, parent, password, seqNumber, squestion){
+function cFolder(name, parent, password, seqNumber, squestion, othername){
 	passwordCenter[name] = password ;
 	if(password != null){
 		sequenceFolder[seqNumber] = name ;
@@ -238,18 +239,18 @@ function cFolder(name, parent, password, seqNumber, squestion){
 		elemA.classList.add("folder-name") ;
 	}
 
-	elemA.id = name+"sp" ;
-	elemA.name = name+"sp" ;
+	elemA.id = name + "sp";
+	elemA.name = othername;
 	elemA.innerHTML = name ;
 	elem.appendChild(elemA) ;
 
 	var elem2 = document.createElement('ul') ;
-	elem2.id = name+"ul" ;
-	elem2.name = name+"ul" ;
+	elem2.id = name + "ul";
+	elem2.name = name + "ul";
 	elem.appendChild(elem2) ;
 
 	var p = document.getElementById(parent+"ul") ;
-	p.appendChild(elem) ;
+	p.appendChild(elem);
 }
 
 /*file routine HTML*/
@@ -338,9 +339,12 @@ functions that deals with the password protection of folders
 function unlockFolder(unlockedFolder){
 	TinyStato.logThis(15, "unlockedfolder", unlockedFolder, sequenceNumber) ;
 
-	var x = document.getElementById(unlockedFolder+"sp") ;
+	
+	var x = document.getElementById(unlockedFolder + "sp");
 	x.classList.remove("protected-name") ;
-	x.classList.add("folder-name") ;
+	x.classList.add("folder-name");
+
+	x.innerHTML = x.name;
 
 	var y = document.getElementById(unlockedFolder+"ul") ;
 	y.classList.remove("hidden") ;

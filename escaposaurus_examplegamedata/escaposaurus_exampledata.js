@@ -41,16 +41,16 @@
 		  		{"foldername":"Etape 1 : Référence",
 				  	"files":["20190509_316504.mp4",".20190509_316504mp4","20190509_316504.mp4","20190509_316504.mp4"]
 				},
-				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel est le nom du guide qui à fait la vidéo de lappel a laide ?","password":"Tomesode","sequence":0,
+				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel est le nom du guide qui à fait la vidéo de lappel a laide ?","password":"Tomesode","sequence":0,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"saucisse","sequence":1,
+				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"saucisse","sequence":1,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"saucisse","sequence":2,
+				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"saucisse","sequence":2,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Motif ?","password":"saucisse","sequence":3,
+				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Motif ?","password":"saucisse","sequence":3,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
 				
