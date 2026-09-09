@@ -32,11 +32,11 @@ video{max-width: 960px;}
 /*size of the countainer defined to fit most used screen resolution*/
 /*main div container*/
 #main-container{
-	max-width: 1300px;
-	max-height:800px;
+	max-width: 1920px;
+	max-height:1080px;
 	margin: auto;
 	height:100%;
-	border:1px solid #1022CC;
+	width : 100%;
 	text-align: center;
 	position:relative;
 	
@@ -159,10 +159,9 @@ video{max-width: 960px;}
 }
 
 /* udisk app*/
-#folderApp{
+#folderAppWrap{
 	width:450px;
 	height:650px;
-	overflow: auto;
 	padding:0 0 0 0;
 	margin:50 0 0 150;
 	background-color:#fff;
@@ -170,10 +169,19 @@ video{max-width: 960px;}
 	background-size: contain;
 }
 
+#folderApp{
+	overflow: auto;
+	padding:0 0 0 0;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	height: 500px;
+}
+
 #folderApp-content{
-	margin-top : 100px;
+	margin-top : 0px;
 	padding:10px;
 	text-align: left;
+	height : 640px;
 }
 
 #overlay-index{
