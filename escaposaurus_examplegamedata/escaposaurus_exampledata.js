@@ -42,26 +42,26 @@
 	  	{"root":{
 	  		"folders":
 		  		[
-		  		{"foldername":"Etape 1 : Le modèle du kimono",
-				  	"files":["20190509_316504.mp4",".20190509_316504mp4","20190509_316504.mp4","20190509_316504.mp4"]
+		  		{"foldername":"Etape 1 - Le modèle du kimono",
+				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
-				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 : Le tissu utilisé",
-			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
+			  		"files":["Echantillons tissu.png","Première fiche descriptive des matériaux.png","Seconde fiche descriptive des matériaux.png","Haiku troublé.png"]
 			  	},
-				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 : La technique de reprisage",
-			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 - La technique de reprisage",
+			  		"files":["Livre techniques.png","Outils de Adrien.png","Haiku frissonnant.png"]
 			  	},
-				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 : L'élément principal du motif",
-			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 - L'élément principal du motif",
+			  		"files":["Kimono avant.png","Kimono arriere.png","Haiku désespéré.png"]
 			  	},
-				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 : Le coupable",
-			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
+				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 - Le coupable",
+			  		"files":["Haiku abandonné.png"]
 			  	},
-				{"foldername":"Résoudre l'affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
+				{"foldername":"Résoudre notre affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
 
 		 		],
 			"files":[
-				"scan_memo.png"]}
+				"Haiku_Enthousiaste.png"]}
 		} ;
 
 		var gameTitle = "Escaposaurus Scenario Exemple" ;
@@ -113,8 +113,8 @@
 		*/
 		var normalContacts = [] ;
 
-		normalContacts[0] = {"vid" : "Hayashi_Tadama", "vod_folder" : "", "username" : "Hayashi Tadama", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
-		normalContacts[1] = {"vid" : "Sada_Yacco", "vod_folder" : "", "username" : "Sada Yacco", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[0] = {"vid" : "Sada_Yacco", "vod_folder" : "", "username" : "Sada Yacco", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[1] = {"vid" : "Hayashi_Tadama", "vod_folder" : "", "username" : "Hayashi Tadama", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
 		normalContacts[2] = {"vid" : "Otojirō_Kawakami", "vod_folder" : "", "username" : "Otojirō Kawakami", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
