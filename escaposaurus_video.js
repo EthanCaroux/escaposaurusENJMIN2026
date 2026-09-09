@@ -491,7 +491,7 @@ function openVideoWindow(vid, vid_folder){
 		src = eventVideoPath;
 	}
 	else{
-		if(mainHintFound)
+		if(mainHintFound || sequenceNumber == 0)
 		{
 			title = titleData.callTitle ;
 			src = vid_folder+"seq"+sequenceNumber+".mp4" ;
