@@ -116,7 +116,7 @@ function loadGame(folders, files, overlay){
     /*ok y'a un truc de sécurité qui fait que ça n'auto-play pas si y'a pas eu un click avant*/
     /*faudra juste faire un message, call entrant, puis ok qui ouvre cette vidéo*/
     setTimeout(function () {
-		openIt('calling-window') ;
+		openIt('calling-letter-window') ;
 	},500);
 }
 
@@ -566,7 +566,7 @@ function changingSequence(){
 	}
 	else if(sequenceNumber == sequenceForEvent)
 	{
-		openIt('calling-window');
+		openIt('calling-phone-window');
 	}
 	else
 	{
@@ -627,7 +627,7 @@ var callbackCloseMissingCall = function(){
 	var cl = document.getElementById("btn-closecall") ;
 	cl.removeEventListener("click", callbackCloseMissingCall) ;
 	setTimeout(function () {
-		openIt('calling-window') ;
+		openIt('calling-letter-window') ;
 	},1000);
 }
 

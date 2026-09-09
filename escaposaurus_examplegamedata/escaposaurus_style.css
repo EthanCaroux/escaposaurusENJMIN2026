@@ -217,13 +217,29 @@ video{max-width: 960px;}
 	width:200px;
 }
 
-#calling-window{
+#calling-letter-window{
 	position:absolute;
 	z-index:300;
 	left:45%;
 	top:35%;
 	background-color:#000;
 	background: url("img/letter.png") center no-repeat ;
+	background-size: contain;
+	width:230px;
+	height:170px;
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#calling-phone-window{
+	position:absolute;
+	z-index:300;
+	left:45%;
+	top:35%;
+	background-color:#000;
+	background: url("img/phone.png") center no-repeat ;
 	background-size: contain;
 	width:230px;
 	height:170px;
@@ -274,7 +290,7 @@ video{max-width: 960px;}
 	font-weight:bold;
 }
 
-#calling-window button{
+#calling-letter-window button{
 	background: url("img/redstamp.png") center no-repeat ;
 	background-size: contain;
 	margin-right: 10px;
@@ -282,7 +298,21 @@ video{max-width: 960px;}
 	width: 50px;
 }
 
-#calling-window button:hover{
+#calling-letter-window button:hover{
+	cursor: pointer;
+	background: url("img/yellowstamp.png") center no-repeat ;
+	background-size: contain;
+}
+
+#calling-phone-window button{
+	background: url("img/redstamp.png") center no-repeat ;
+	background-size: contain;
+	margin-right: 10px;
+	height : 50px;
+	width: 50px;
+}
+
+#calling-phone-window button:hover{
 	cursor: pointer;
 	background: url("img/yellowstamp.png") center no-repeat ;
 	background-size: contain;
