@@ -358,28 +358,33 @@ video{max-width: 960px;}
 #footer{
 	height:34px;
 	width:100%;
-	background-color:#7D5F34;
 	position: absolute;
 	padding-top:3px;
-	padding-bottom:3px;
-	bottom: 0;
+	bottom: 15px;
 	text-align: center;
 }
 
 .footer-button{
-	color:#000;
+	color:#d0cfcf;
 	background-color: #fff;
-	border:none;
+	border: 2px;
+	border-style: solid;
+	border-color: #6B5736;
+	background: url("img/woodtexture.png") center no-repeat ;
+	background-size:cover;
 	margin-right:5px;
 	padding:3px;
 	font-family: Roboto ;
 	font-size:16px;
 	font-weight:bold;
+	border-radius: 25px;
+	min-width: 250px;
 }
 
 .footer-button:hover{
-	color:#000;
-	background-color: #aaa;
+	color:#23527c;
+	background: url("img/woodtexturelight.png") center no-repeat ;
+	background-size:cover;
 	cursor: pointer;
 }
 
