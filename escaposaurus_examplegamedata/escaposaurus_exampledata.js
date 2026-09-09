@@ -46,16 +46,16 @@
 				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
 				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
-			  		"files":["Echantillons tissu.png","Première fiche descriptive des matériaux.png","Seconde fiche descriptive des matériaux.png","Haiku troublé.png"]
+			  		"files":["Echantillons tissu.png","Première fiche descriptive des matériaux.png","Seconde fiche descriptive des matériaux.png","Photo officielle.png","Haiku troublé.png"]
 			  	},
 				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 - La technique de reprisage",
-			  		"files":["Livre techniques.png","Outils de Adrien.png","Haiku frissonnant.png"]
+			  		"files":["Livre techniques.png","Outils de Adrien.png","Photo austère.png","Haiku frissonnant.png"]
 			  	},
 				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 - L'élément principal du motif",
-			  		"files":["Kimono avant.png","Kimono arriere.png","Haiku désespéré.png"]
+			  		"files":["Kimono avant.png","Kimono arriere.png","Photo parfumée.png","Haiku désespéré.png"]
 			  	},
 				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 - Le coupable",
-			  		"files":["Haiku abandonné.png"]
+			  		"files":["Photo romantique.png","Haiku abandonné.png"]
 			  	},
 				{"foldername":"Résoudre notre affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
 
@@ -118,7 +118,7 @@
 		normalContacts[2] = {"vid" : "Otojirō_Kawakami", "vod_folder" : "", "username" : "Otojirō Kawakami", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
-		finalStepAdded = "ID du GPS transmise aux secours." ;
+		finalStepAdded = "Vous devriez la joindre pour lui en parler..." ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
 		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Sada Yacco",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
