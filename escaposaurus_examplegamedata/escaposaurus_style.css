@@ -10,7 +10,7 @@
 
 /*by default there is no margin or padding anywhere*/
 *{ margin: 0px; padding: 0px; }
-a{color:#1022CC;}
+a{color:#454444;}
 body{font-family: Arial;}
 
 /*on veut la lightbox devant*/
@@ -166,10 +166,12 @@ video{max-width: 960px;}
 	padding:0 0 0 0;
 	margin:50 0 0 150;
 	background-color:#fff;
-	border:2px solid black;
+	background: url("img/folder.png") center no-repeat;
+	background-size: contain;
 }
 
 #folderApp-content{
+	margin-top : 100px;
 	padding:10px;
 	text-align: left;
 }
@@ -433,6 +435,7 @@ ul{
 
 .folder-name:hover{
 	text-decoration: none;
+	color : black;
 }
 
 .protected-name{
