@@ -41,19 +41,20 @@
 		  		{"foldername":"Etape 1 : Référence",
 				  	"files":["20190509_316504.mp4",".20190509_316504mp4","20190509_316504.mp4","20190509_316504.mp4"]
 				},
-				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel est le nom du guide qui à fait la vidéo de lappel a laide ?","password":"Tomesode","sequence":0,"othername":"ALED",
+				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel modèle de Kimono choisir ?","password":"Tomesode","sequence":0,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"saucisse","sequence":1,"othername":"ALED",
+				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"saucisse","sequence":2,"othername":"ALED",
+				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Motif ?","password":"saucisse","sequence":3,"othername":"ALED",
+				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"ALED",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				
+				{"foldername":"Etape 6 : compte rendu ?","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"ALED",},
+
 		 		],
 			"files":[
 				"scan_memo.png"]}
@@ -87,7 +88,7 @@
 		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
-		var sequenceWin = 4 ;
+		var sequenceWin = 5 ;
 
 		/*before being able to call the contacts, the player has to open the main clue of the sequence as indicated in this array*/
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
@@ -102,21 +103,16 @@
 	their img need to be placed in their video folder, username is their displayed name
 		*/
 		var normalContacts = [] ;
-		normalContacts[0] = {"vid" : "Denise", "vod_folder" : "", "username" : "Denise (guide)", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
-		normalContacts[1] = {"vid" : "Nathalie", "vod_folder" : "", "username" : "Nathalie (guide)", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
-		normalContacts[2] = {"vid" : "Nathalie", "vod_folder" : "", "username" : "Test (Test)", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
-		/*second part of the list, contact that can help the player*/
-		var helperContacts = [] ;
-		helperContacts[0] = {"vid" : "Albert", "vod_folder" : "", "username" : "Albert (pour avoir un indice)", "canal" : "txt", "avatar" : "albert.png", "bigAvatar" : "albertbig.png"} ;
-		/*helperContacts[1] = {"vid" : "Lou", "username" : "Lou (pour avoir un deuxième indice) - par message", "canal" : "txt", "avatar" : "Lou_opt.jpg", "bigAvatar" : "avatarHelper2Big.gif"} ;*/
-
+		normalContacts[0] = {"vid" : "Hayashi Tadama", "vod_folder" : "", "username" : "Hayashi Tadama", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
+		normalContacts[1] = {"vid" : "Otojirō Kawakami", "vod_folder" : "", "username" : "Otojirō Kawakami", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[2] = {"vid" : "Sada Yacco", "vod_folder" : "", "username" : "Sada Yacco", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
 		finalStepAdded = "ID du GPS transmise aux secours." ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Nathalie",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Sada Yacco",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;
