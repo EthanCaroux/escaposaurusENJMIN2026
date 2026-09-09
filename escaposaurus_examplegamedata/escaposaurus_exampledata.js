@@ -42,22 +42,22 @@
 	  	{"root":{
 	  		"folders":
 		  		[
-		  		{"foldername":"Etape 1 : Référence",
+		  		{"foldername":"Etape 1 : Le modèle du kimono",
 				  	"files":["20190509_316504.mp4",".20190509_316504mp4","20190509_316504.mp4","20190509_316504.mp4"]
 				},
-				{"foldername":"Etape 2 : Choix des matériaux","squestion":"Quel modèle de Kimono choisir ?","password":"Tomesode","sequence":0,"othername":"ALED",
+				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 : Le tissu utilisé",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 3 : Technique de reprisage","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"ALED",
+				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 : La technique de reprisage",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 4 : Remettre le kimono","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"ALED",
+				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 : L'élément principal du motif",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 5 : Faire un compte-rendu","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"ALED",
+				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 : Le coupable",
 			  		"files":["20190509_316504.mp4", "20190509_316504.mp4", "20190509_316504.mp4"]
 			  	},
-				{"foldername":"Etape 6 : compte rendu ?","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"ALED",},
+				{"foldername":"Résoudre l'affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
 
 		 		],
 			"files":[
@@ -86,10 +86,11 @@
 		var promptDefault = "Rien à demander, ne pas les déranger." ;
 		var prompt = [] ;
 		prompt[0] = "Prendre contact" ;
-		prompt[1] = "" ;
-		prompt[2] = "" ;
+		prompt[1] = "Prendre contact" ;
+		prompt[2] = "Prendre contact" ;
 		prompt[3] = "Envoyer la carte" ;
 		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
+		prompt[5] = "Appeler Nathalie pour savoir où en sont les secours." ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 5 ;
@@ -98,19 +99,23 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "scan_memo.png" ;
-		seqMainHint[1] = "aucun" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
-		seqMainHint[2] = "aucun" ;
-		seqMainHint[3] = "swisstopo-screen.png" ;
+		seqMainHint[0] = "noHint" ;
+		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[2] = "noHint" ;
+		seqMainHint[3] = "noHint" ;
+		seqMainHint[4] = "noHint" ;
+		seqMainHint[5] = "noHint" ;
+
+
 
 		/*contact list, vid is the name of their folder in the videoContact folder, then the game autoload the video named seq%number of the current sequence%, e.g. seq0.MP4 for the first sequence (numbered 0 because computer science habits)
 	their img need to be placed in their video folder, username is their displayed name
 		*/
 		var normalContacts = [] ;
 
-		normalContacts[0] = {"vid" : "Hayashi Tadama", "vod_folder" : "", "username" : "Hayashi Tadama", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
-		normalContacts[1] = {"vid" : "Otojirō Kawakami", "vod_folder" : "", "username" : "Otojirō Kawakami", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
-		normalContacts[2] = {"vid" : "Sada Yacco", "vod_folder" : "", "username" : "Sada Yacco", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[0] = {"vid" : "Hayashi_Tadama", "vod_folder" : "", "username" : "Hayashi Tadama", "canal" : "video", "avatar" : "denise_avatar.jpg"} ;
+		normalContacts[1] = {"vid" : "Sada_Yacco", "vod_folder" : "", "username" : "Sada Yacco", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		normalContacts[2] = {"vid" : "Otojirō_Kawakami", "vod_folder" : "", "username" : "Otojirō Kawakami", "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*ce qui apparait quand on trouve le dernier élément du disque dur*/
 		finalStepAdded = "ID du GPS transmise aux secours." ;
@@ -125,6 +130,7 @@
 		tips['Albert'][1] = "" ;
 		tips['Albert'][2] = "" ;
 		tips['Albert'][3] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
+		tips['Albert'][4] = "Ah zut, un dossier verouillé sans infos dans scan mémo ? Y'a forcément un truc mnémotechnique facile à retenir ou retrouver. Les guides en disent quoi ?" ;
 
 
 		/*text for the instruction / solution windows*/
