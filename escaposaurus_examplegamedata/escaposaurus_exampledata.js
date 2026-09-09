@@ -27,6 +27,10 @@
 		var missingVideoPath = videoRoot+"contactVideo/missing/final.mp4" ;
 		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
 
+		/*variables defined for our own sudden call events ; Example*/
+		var eventVideoPath = videoRoot + "event.mp4";
+		var sequenceForEvent = 1;
+
 		/*udisk JSON path*/
 		var udiskRoot = gameDataRoot+"udisk/" ;
 

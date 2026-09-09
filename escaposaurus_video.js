@@ -465,25 +465,40 @@ function openVideoWindow(vid, vid_folder){
 	var title ;
 	var src ;
 	/*according to case, deal with title and video path*/
-	if(vid == "intro" || vid == "introBis"){
+	if(vid == "intro" || vid == "introBis")
+	{
 		title = titleData.introTitle ;
 		src = introVideoPath ;
-	}else if(vid == "epilogue"){
+	}
+	else if(vid == "epilogue")
+	{
 		title = titleData.epilogueTitle ;
 		src = epilogueVideoPath ;
-	}else if(vid == "missing"){
+	}
+	else if(vid == "missing")
+	{
 		title = titleData.callTitle ;
 		src = missingVideoPath ;
+	
 
 		/*add listerner to launch the end of the game when player close this video*/
 		var cl = document.getElementById("btn-closecall") ;
 		cl.addEventListener("click", callbackCloseMissingCall) ;
-	}else{
-		if(mainHintFound){
+	}
+	else if(vid == "event")
+	{
+		title = titleData.callTitle;
+		src = eventVideoPath;
+	}
+	else{
+		if(mainHintFound)
+		{
 			title = titleData.callTitle ;
 			src = vid_folder+"seq"+sequenceNumber+".mp4" ;
 			document.getElementById('divcontact-'+vid).classList.add("already-called") ;
-		}else{
+		}
+		else
+		{
 			/*no call, because main clue not opened, display of message*/
 			openIt('nocall-window') ;
 			return;
@@ -542,15 +557,24 @@ function closeIt(nameId){
 function changingSequence(){
 	sequenceNumber++ ;
 
+
+
 	if(sequenceNumber >= sequenceWin){
 		TinyStato.logThis(2, "win", "", sequenceNumber) ;
 		unlockContacts() ;
 		win() ;
-	}else{
+	}
+	else if(sequenceNumber == sequenceForEvent)
+	{
+		openIt('calling-window');
+	}
+	else
+	{
 		TinyStato.logThis(3, "newsequence", "", sequenceNumber) ;
 		mainHintFound = false ;
 		lockContacts() ;
-		if(seqMainHint[sequenceNumber] == "noHint"){
+		if(seqMainHint[sequenceNumber] == "noHint")
+		{
 			mainHintFound = true ;
 			unlockContacts() ;
 		}
@@ -574,14 +598,28 @@ function closeNewContact(d){
 	createContact(missingContact, nc) ;
 }
 
+/*openIt('calling-window') opens the window for an upcoming call, when it is closed, this is called*/
+/*which allows us to decide what exactly is going to get played*/
+/*so to link a incoming call to a specific sequence, on sequence change, open that window, then, on close, check the sequence and act accordingly*/
 function closeAppelEntrant(d){
 	closeIt(d) ;
 
-	if(winState === false){
-		openVideoWindow('intro') ;
-	}else{
-		openEpilogue() ;
+	if(sequenceNumber == sequenceForEvent)
+	{
+		openVideoWindow('event');
 	}
+	else
+	{
+		if(winState === false)
+		{
+			openVideoWindow('intro') ;
+		}
+		else
+		{
+			openEpilogue() ;
+		}
+	}
+	
 }
 
 /*via eventlistener, callback that open the end of the game (epilogue and credit video)*/

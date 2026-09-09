@@ -108,6 +108,8 @@ video{max-width: 960px;}
 	overflow: auto;
 	background: url("img/fichecontact.png") center no-repeat;
 	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
 }
 
 #callApp-help, #callApp-prompt{
