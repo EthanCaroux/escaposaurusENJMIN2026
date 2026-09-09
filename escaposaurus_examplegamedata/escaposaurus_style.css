@@ -42,7 +42,7 @@ video{max-width: 960px;}
 	
 	background: url(img/background.jpg);
 	background-position: center;
-	background-color:#1022CC;
+	background-color:#7D5F34;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -66,7 +66,7 @@ video{max-width: 960px;}
 
 #div-homeMission{
 	background-color:#dcdcdc;
-	border:2px solid #1022CC;
+	border:2px solid #7D5F34;
 	padding:5px;
 }
 
@@ -75,7 +75,7 @@ video{max-width: 960px;}
 	font-size:30px;
 	font-weight: bold;
 	padding:5px;
-	background-color:#1022CC;
+	background-color:#7D5F34;
 	font-family: Roboto;
 }
 
@@ -86,7 +86,7 @@ video{max-width: 960px;}
 /*shared style for app*/
 .app-title{
 	height:50px;
-	background-color: #1022CC;
+	background-color: #7D5F34;
 	border:1px solid white;
 	color: white;
 	text-align:center;
@@ -114,7 +114,6 @@ video{max-width: 960px;}
 	font-size:18px;
 	padding:10px;
 	text-align: center;
-	#background-color:#ccc;
 	color:black;
 	margin-top : 100px;
 }
@@ -127,7 +126,7 @@ video{max-width: 960px;}
 .contact-div{
 	font-size:16px;
 	text-align: left;
-	margin-bottom:50px;
+	margin-bottom:60px;
 	font-weight: bold;
 }
 
@@ -203,7 +202,6 @@ video{max-width: 960px;}
 #passPrompt-window,
 #wrongPassword,
 #newContact-window,
-#calling-window,
 #message-window,
 #nocall-window,
 #solution-window,
@@ -215,6 +213,22 @@ video{max-width: 960px;}
 	border:1px solid white;
 	background-color:#000;
 	width:200px;
+}
+
+#calling-window{
+	position:absolute;
+	z-index:300;
+	left:45%;
+	top:35%;
+	background-color:#000;
+	background: url("img/letter.png") center no-repeat ;
+	background-size: contain;
+	width:230px;
+	height:170px;
+
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
 }
 
 #solution-window,
@@ -243,7 +257,6 @@ video{max-width: 960px;}
 #newContact-window button,
 #UIvid-window button,
 #callVideo-window button,
-#calling-window button,
 #message-window button,
 #nocall-window button,
 #solution-window button,
@@ -259,13 +272,26 @@ video{max-width: 960px;}
 	font-weight:bold;
 }
 
+#calling-window button{
+	background: url("img/redstamp.png") center no-repeat ;
+	background-size: contain;
+	margin-right: 10px;
+	height : 50px;
+	width: 50px;
+}
+
+#calling-window button:hover{
+	cursor: pointer;
+	background: url("img/yellowstamp.png") center no-repeat ;
+	background-size: contain;
+}
+
 #notnowPrompt-window button:hover,
 #passPrompt-window button:hover,
 #wrongPassword button:hover,
 #newContact-window button:hover,
 #UIvid-window button:hover,
 #callVideo-window button:hover,
-#calling-window button:hover,
 #message-window button:hover,
 #nocall-window button:hover,
 #solution-window button:hover,
@@ -291,7 +317,7 @@ video{max-width: 960px;}
 #footer{
 	height:34px;
 	width:100%;
-	background-color:#1022CC;
+	background-color:#7D5F34;
 	position: absolute;
 	padding-top:3px;
 	padding-bottom:3px;
