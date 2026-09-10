@@ -517,7 +517,7 @@ function openVideoWindow(vid, vid_folder){
 		title = titleData.epilogueTitle ;
 		src = epilogueVideoPath ;
 	}
-	else if(vid == "missing")
+	else if(vid == "SY")
 	{
 		title = titleData.callTitle ;
 		src = missingVideoPath ;
