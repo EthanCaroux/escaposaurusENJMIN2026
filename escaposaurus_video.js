@@ -106,6 +106,7 @@ function loadGame(folders, files, overlay){
 
     createContactList() ;
     lockContacts() ;
+	unlockContacts() ;
 
     /*launch lightbox after creation of the udisk to make it work*/
     startLighBox() ;
@@ -334,6 +335,8 @@ function createContactList(){
 	for(var i = 0 ; i < normalContacts.length ; i++){
 		createContact(normalContacts[i], nc) ;
 	}
+
+	
 }
 
 function createContact(contact, parent){
