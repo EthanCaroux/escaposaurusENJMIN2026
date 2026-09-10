@@ -241,7 +241,11 @@ function cFolder(name, parent, password, seqNumber, squestion, othername){
 
 	elemA.id = name + "sp";
 	elemA.name = othername;
-	elemA.innerHTML = name ;
+
+	if (name == "root") { elemA.innerHTML = "" }
+	else { elemA.innerHTML = name; }
+
+
 	elem.appendChild(elemA) ;
 
 	var elem2 = document.createElement('ul') ;
