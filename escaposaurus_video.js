@@ -265,6 +265,10 @@ function cFile(name, parent, fullPath){
 
 	var elemA = document.createElement('a') ;
 	elemA.classList.add("file-name") ;
+
+	var audioSource = "./PAPER.mp3"
+	elemA.setAttribute("onclick","playAudio('"+audioSource+"')")
+	
 	elemA.href = udiskRoot+fullPath+name ;
 	elemA.setAttribute("data-lightbox", "") ;
 	elemA.setAttribute("data-image-alt", "name") ;
@@ -273,6 +277,19 @@ function cFile(name, parent, fullPath){
 
 	var p = document.getElementById(parent+"ul") ;
 	p.appendChild(elem) ;
+}
+
+function playAudio(audioSource)
+{
+	var soundPlayer = new Audio();
+	soundPlayer.src = audioSource;
+
+	var max = 1.3;
+	var min = 0.7;
+
+	soundPlayer.preservesPitch = false;
+	soundPlayer.playbackRate = (Math.random() * (max - min + 1) + min);
+	soundPlayer.play();
 }
 
 /*to lock folder after creating the udisk*/
