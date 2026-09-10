@@ -25,11 +25,11 @@
 		var missionVideoPath = videoRoot+"introVideo/intro1.mp4" ;
 		var introVideoPath = videoRoot+"intro.mp4" ;
 		var missingVideoPath = videoRoot+"contactVideo/missing/final.mp4" ;
-		var epilogueVideoPath = videoRoot+"rat attack.mp4" ;
+		var epilogueVideoPath = videoRoot+"outro.mp4" ;
 
 		/*variables defined for our own sudden call events ; Example*/
-		var eventVideoPath = videoRoot + "event.mp4";
-		var sequenceForEvent = 1;
+		var eventVideoPath = videoRoot + "eventHayashi.mp4";
+		var sequenceForEvent = 3;
 
 		/*udisk JSON path*/
 		var udiskRoot = gameDataRoot+"udisk/" ;

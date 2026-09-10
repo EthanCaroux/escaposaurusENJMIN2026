@@ -533,6 +533,7 @@ function openVideoWindow(vid, vid_folder){
 	{
 		title = titleData.callTitle;
 		src = eventVideoPath;
+		unlockContacts();
 	}
 	else{
 		if(mainHintFound || sequenceNumber == 0)
@@ -679,6 +680,8 @@ function closeAppelEntrant(d){
 	if(sequenceNumber == sequenceForEvent)
 	{
 		openVideoWindow('event');
+		lockContacts();
+		unlockContacts();
 	}
 	else
 	{
