@@ -43,7 +43,7 @@
 	  		"folders":
 		  		[
 		  		{"foldername":"Etape 1 - Le modèle du kimono",
-				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
+				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Echantillon de tissu.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
 				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
 					"files": ["Echantillons tissu.png", "Première fiche descriptive des matériaux.png", "Seconde fiche descriptive des matériaux.png", "Photo officielle.png","Lettre passionelle.png","Haiku troublé.png"]
@@ -65,7 +65,7 @@
 		} ;
 
 		var gameTitle = "Escaposaurus" ;
-var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - concepteur spécialisé en habillement traditionnel japonais. Par cette belle matinée de printemps, vous entrez dans votre bureau et ouvrez le colis que vous avez reçu de votre ami le commissaire d’art Hayashi Tadamasa. Que peut il bien vous vouloir ?</I> \n\n\n" ;
+		var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - concepteur spécialisé en habillement traditionnel japonais. Par cette belle matinée de printemps, vous entrez dans votre bureau et ouvrez le colis que vous avez reçu de votre ami le commissaire d’art Hayashi Tadamasa. Que peut il bien vous vouloir ?</I> \n\n\n" ;
 		var gameSecondDescription = "L’interface dans laquelle vous allez évoluer représente votre bureau. L’arborescence sur votre droite représente la liste d’étapes à accomplir pour remplir votre mission. Accomplissez les étapes l’une après l’autre en renseignant le mot qui correspond à ce qui est attendu et pour pouvoir accéder à l’étape suivante."
 		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données";
 
@@ -122,7 +122,7 @@ var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - conc
 		finalStepAdded = "Vous devriez la joindre pour lui en parler..." ;
 
 		/*the last call, it can be the person we find in the end or anyone else we call to end the quest, allows the game to know it is the final contact that is called and to proceed with the ending*/
-		var missingContact = {"vid" : "missing", "vod_folder" : "","username" : "Sada Yacco",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
+		var missingContact = {"vid" : "SY", "vod_folder" : "","username" : "Sada Yacco",  "canal" : "video", "avatar" : "nata_avatar.jpg"} ;
 
 		/*Lou only send text message, they are stored here*/
 		var tips = {} ;

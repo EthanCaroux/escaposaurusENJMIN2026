@@ -439,8 +439,7 @@ function openPasswordPrompt(foldername,question){
 
 	}else{
 		if(folderState[foldername] == 1){
-			var d = document.getElementById("folderN") ;
-			d.innerHTML = foldername ;
+
 
 			var p = document.getElementById("notnowPrompt-window") ;
 			p.classList.remove("hidden") ;
