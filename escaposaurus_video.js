@@ -28,7 +28,8 @@ function loadDataIntoHTML(){
 	/*load html content from data*/
 	document.title = gameTitle ;
 	document.getElementById("home-gameTitle").innerHTML = gameTitle ;
-	document.getElementById("home-gameDescription").innerHTML = gameDescriptionHome ;
+	document.getElementById("home-gameDescription").innerHTML = gameDescriptionHome;
+	document.getElementById("home-gameSecondDescription").innerHTML = gameSecondDescription;
 	/*document.getElementById("home-mission").innerHTML = gameMissionCall ;*/
 	document.getElementById("overlay-btn").innerHTML = gameMissionAccept ;
 	/*document.getElementById("vid-overlay").src = missionVideoPath ;*/
