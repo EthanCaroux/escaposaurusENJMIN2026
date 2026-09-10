@@ -241,9 +241,7 @@ function cFolder(name, parent, password, seqNumber, squestion, othername){
 
 	elemA.id = name + "sp";
 	elemA.name = othername;
-
-	if (name == "root") { elemA.innerHTML = "" }
-	else { elemA.innerHTML = name; }
+	elemA.innerHTML = name;
 
 
 	elem.appendChild(elemA) ;
@@ -567,6 +565,15 @@ function changingSequence(){
 		TinyStato.logThis(2, "win", "", sequenceNumber) ;
 		unlockContacts() ;
 		win() ;
+	}
+	else if (sequenceNumber == 1) {
+		TinyStato.logThis(3, "newsequence", "", sequenceNumber);
+		mainHintFound = false;
+		lockContacts();
+		if (seqMainHint[sequenceNumber] == "noHint") {
+			mainHintFound = true;
+			unlockContacts();
+		}
 	}
 	else if(sequenceNumber == sequenceForEvent)
 	{

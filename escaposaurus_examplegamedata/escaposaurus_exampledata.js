@@ -46,16 +46,16 @@
 				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
 				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
-			  		"files":["Echantillons tissu.png","Première fiche descriptive des matériaux.png","Seconde fiche descriptive des matériaux.png","Photo officielle.png","Haiku troublé.png"]
+					"files": ["Echantillons tissu.png", "Première fiche descriptive des matériaux.png", "Seconde fiche descriptive des matériaux.png", "Photo officielle.png","Lettre passionelle.png","Haiku troublé.png"]
 			  	},
 				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 - La technique de reprisage",
-			  		"files":["Livre techniques.png","Outils de Adrien.png","Photo austère.png","Haiku frissonnant.png"]
+					"files": ["Livre techniques.png", "Outils de Adrien.png", "Photo austère.png","Lettre menacante.png","Haiku frissonnant.png"]
 			  	},
 				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 - L'élément principal du motif",
 			  		"files":["Kimono avant.png","Kimono arriere.png","Photo parfumée.png","Haiku désespéré.png"]
 			  	},
 				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 - Le coupable",
-			  		"files":["Photo romantique.png","Haiku abandonné.png"]
+					"files": ["Photo romantique.png", "Lettre pathétique.png","Lettre funeste.png","Haiku abandonné.png"]
 			  	},
 				{"foldername":"Résoudre notre affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
 
@@ -85,12 +85,12 @@
 		/*change of caller app prompt for each sequence*/
 		var promptDefault = "Rien à demander, ne pas les déranger." ;
 		var prompt = [] ;
-		prompt[0] = "Prendre contact" ;
-		prompt[1] = "Prendre contact" ;
-		prompt[2] = "Prendre contact" ;
-		prompt[3] = "Envoyer la carte" ;
-		prompt[4] = "Appeler Nathalie pour savoir où en sont les secours." ;
-		prompt[5] = "Appeler Nathalie pour savoir où en sont les secours." ;
+		prompt[0] = "" ;
+		prompt[1] = "" ;
+		prompt[2] = "" ;
+		prompt[3] = "" ;
+		prompt[4] = "" ;
+		prompt[5] = "" ;
 
 		/*when the sequence number reach this, the player win, the missing contact is added and the player can call them*/
 		var sequenceWin = 5 ;
@@ -99,8 +99,8 @@
 		/*if you put in the string "noHint", player will be able to immediatly call the contact at the beginning of the sequence*/
 		/*if you put "none" or anything that is not an existing filename, the player will NOT be able to call the contacts during this sequence*/
 		var seqMainHint = [] ;
-		seqMainHint[0] = "noHint" ;
-		seqMainHint[1] = "noHint" ; /*if you put anything that is not an existing filename of the udisk, the player will never be able to call any contacts or get helps during this sequence*/
+		seqMainHint[0] = "noHint";
+		seqMainHint[1] = "noHint";
 		seqMainHint[2] = "noHint" ;
 		seqMainHint[3] = "noHint" ;
 		seqMainHint[4] = "noHint" ;
