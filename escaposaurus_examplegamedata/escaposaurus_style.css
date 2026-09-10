@@ -207,16 +207,39 @@ video{max-width: 960px;}
 	border:1px solid white;
 	background-color:#000;
 	width:1000px;
+	left: 280px;
 	text-align: center;
 }
 
-#notnowPrompt-window,
-#passPrompt-window,
+
 #wrongPassword,
 #newContact-window,
 #message-window,
 #nocall-window,
-#solution-window,
+#solution-window{
+	position:absolute;
+	z-index:300;
+	left:45%;
+	top:35%;
+	border:1px solid white;
+	background-color:#000;
+	width:200px;
+	left:580px;
+}
+
+#notnowPrompt-window,
+#passPrompt-window,
+#wrongPassword{
+	position:absolute;
+	z-index:300;
+	left:45%;
+	top:35%;
+	border:1px solid white;
+	background-color:#000;
+	width:200px;
+	left:670px;
+}
+
 #credit-window{
 	position:absolute;
 	z-index:300;
@@ -225,6 +248,7 @@ video{max-width: 960px;}
 	border:1px solid white;
 	background-color:#000;
 	width:200px;
+	left:580px;
 }
 
 #calling-letter-window{
@@ -237,6 +261,7 @@ video{max-width: 960px;}
 	background-size: contain;
 	width:230px;
 	height:170px;
+	left: 659px;
 
 	display: flex;
   	justify-content: center;

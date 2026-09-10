@@ -669,7 +669,7 @@ function openEpilogue(){
 }
 
 /* HELP AND SOLUTION BOX */
-function instructionReveal(spid){
+/*function instructionReveal(spid){
 	TinyStato.logThis(101, "instructionreveal", mainHintFound, sequenceNumber) ;
 	var text = "" ;
 	var sp = document.getElementById(spid) ;
@@ -683,7 +683,7 @@ function instructionReveal(spid){
 	}
 	sp.innerHTML = text ;
 	openIt(spid) ;
-}
+}*/
 
 function solutionReveal(spid){
 	TinyStato.logThis(102, "solutionreveal", mainHintFound, sequenceNumber) ;
