@@ -303,7 +303,7 @@ function playAudio(audioSource)
 }
 
 function playBackgroundMusic(){
-	backgroundMusicPlayer.volume = (1);
+	backgroundMusicPlayer.volume = (0.6);
 	backgroundMusicPlayer.currentTime = 0;
 	backgroundMusicPlayer.play();
 }
@@ -614,19 +614,6 @@ function getToNextKimono(){
 		kimono.id = ("kimonoApp3");
 		currentKimono = ("kimonoApp3");
 	}
-	else if(currentKimono == "kimonoApp3"){
-		var kimono = document.getElementById("kimonoApp3");
-		kimono.id = ("kimonoApp4");
-		currentKimono = ("kimonoApp4");
-	}
-	else if(currentKimono == "kimonoApp4"){
-		var kimono = document.getElementById("kimonoApp4");
-		kimono.id = ("kimonoApp5");
-		currentKimono = ("kimonoApp5");
-	}
-
-	
-	
 }
 
 /*progression, beggining, and end specific event*/

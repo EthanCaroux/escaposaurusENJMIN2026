@@ -151,35 +151,7 @@ video{max-width: 960px;}
 	background-color: #fff;
 	#border: 2px solid black;
 	overflow: auto;
-	background: url("img/kimono3.png") center no-repeat;
-	background-size: 100% 100%;
-	overflow-x: hidden;
-  	overflow-y: hidden;
-}
-
-#kimonoApp4 {
-	width: 250px;
-	height: 200px;
-	padding: 0 0 0 0;
-	margin: 50 500 12 50;
-	background-color: #fff;
-	#border: 2px solid black;
-	overflow: auto;
 	background: url("img/kimono4.png") center no-repeat;
-	background-size: 100% 100%;
-	overflow-x: hidden;
-  	overflow-y: hidden;
-}
-
-#kimonoApp5 {
-	width: 250px;
-	height: 200px;
-	padding: 0 0 0 0;
-	margin: 50 500 12 50;
-	background-color: #fff;
-	#border: 2px solid black;
-	overflow: auto;
-	background: url("img/kimono5.png") center no-repeat;
 	background-size: 100% 100%;
 	overflow-x: hidden;
   	overflow-y: hidden;
