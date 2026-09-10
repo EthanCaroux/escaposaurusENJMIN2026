@@ -18,6 +18,9 @@ var winState = false ;
 var mainHintFound = false ;
 var gameStart = false ;
 
+var backgroundMusicPlayer = new Audio("./music.mp3");
+var cutMusicPlayer = new Audio("./cutmusic.mp3");
+
 
 /*
 	FIRST FUNCTION CALLED UPON WINDOWS LOADED TO PREPARE THE GAME
@@ -112,6 +115,9 @@ function loadGame(folders, files, overlay){
 
     /*close the overlay*/
     closeIt(overlay) ;
+
+	/*start background music*/
+	playBackgroundMusic();
 
     /*now we open the intro video, or we have a page before, we need to decide, same for credits :/*/
     /*ok y'a un truc de sécurité qui fait que ça n'auto-play pas si y'a pas eu un click avant*/
@@ -284,13 +290,24 @@ function playAudio(audioSource)
 {
 	var soundPlayer = new Audio();
 	soundPlayer.src = audioSource;
-
+	soundPlayer.volume = (0.8);
 	var max = 1.3;
 	var min = 0.7;
 
 	soundPlayer.preservesPitch = false;
 	soundPlayer.playbackRate = (Math.random() * (max - min + 1) + min);
 	soundPlayer.play();
+}
+
+function playBackgroundMusic(){
+	backgroundMusicPlayer.volume = (1);
+	backgroundMusicPlayer.currentTime = 0;
+	backgroundMusicPlayer.play();
+}
+
+function pauseBackgroundMusic(){
+	cutMusicPlayer.play();
+	backgroundMusicPlayer.pause();
 }
 
 /*to lock folder after creating the udisk*/
@@ -478,6 +495,9 @@ function openContactTxTWindow(vid, bigAvatarHelper){
 
 /*open/close video windows*/
 function openVideoWindow(vid, vid_folder){
+
+	/*background music needs to be paused for video*/
+	pauseBackgroundMusic();
 	var x = document.getElementById("callVideo-content") ;
 	var t = document.getElementById("callVideo-title") ;
 	
@@ -546,6 +566,8 @@ function closeVideoWindow(parentElem){
 	while (x.firstChild) {
 		x.removeChild(x.lastChild);
 	}
+
+	playBackgroundMusic();
 }
 
 /*
