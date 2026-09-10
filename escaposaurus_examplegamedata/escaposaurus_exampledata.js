@@ -23,7 +23,7 @@
 
 		/*full path to intro / outro video*/
 		var missionVideoPath = videoRoot+"introVideo/intro1.mp4" ;
-		var introVideoPath = videoRoot+"introVideo/intro2.mp4" ;
+		var introVideoPath = videoRoot+"intro.mp4" ;
 		var missingVideoPath = videoRoot+"contactVideo/missing/final.mp4" ;
 		var epilogueVideoPath = videoRoot+"epilogueVideo/epiloguecredit.mp4" ;
 
@@ -49,7 +49,7 @@
 					"files": ["Echantillons tissu.png", "Première fiche descriptive des matériaux.png", "Seconde fiche descriptive des matériaux.png", "Photo officielle.png","Lettre passionelle.png","Haiku troublé.png"]
 			  	},
 				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 - La technique de reprisage",
-					"files": ["Livre techniques.png", "Outils de Adrien.png", "Photo austère.png","Lettre menacante.png","Haiku frissonnant.png"]
+					"files": ["Techniques de reprisage.png", "Outils de Adrien.png", "Photo austère.png","Lettre menacante.png","Haiku frissonnant.png"]
 			  	},
 				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 - L'élément principal du motif",
 			  		"files":["Kimono avant.png","Kimono arriere.png","Photo parfumée.png","Haiku désespéré.png"]
