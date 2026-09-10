@@ -64,11 +64,12 @@
 				"Haiku_Enthousiaste.png"]}
 		} ;
 
-		var gameTitle = "Escaposaurus Scenario Exemple" ;
-		var gameDescriptionHome = "Ceci est une courte aventure d'exemple pour montrer ce que le framework Escaposaurus permet facilement de réaliser.<br/>Le code source est téléchargeable sur <a href='https://github.com/RedNaK/escaposaurus' target='_blank'>GitHub</a>" ;
-		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données" ;
-		var gameMissionAccept = "&raquo;&raquo; Accepter la mission et charger la clé USB dans le serveur virtuel (JOUER) &laquo;&laquo;" ;
+		var gameTitle = "Escaposaurus" ;
+var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - concepteur spécialisé en habillement traditionnel japonais. Par cette belle matinée de printemps, vous entrez dans votre bureau et ouvrez le colis que vous avez reçu de votre ami le commissaire d’art Hayashi Tadamasa. Que peut il bien vous vouloir ?</I> \n\n\n" ;
+		var gameSecondDescription = "L’interface dans laquelle vous allez évoluer représente votre bureau. L’arborescence sur votre droite représente la liste d’étapes à accomplir pour remplir votre mission. Accomplissez les étapes l’une après l’autre en renseignant le mot qui correspond à ce qui est attendu et pour pouvoir accéder à l’étape suivante."
+		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données";
 
+		var gameMissionAccept = "&raquo;&raquo; Entrer dans le bureau (JOUER) &laquo;&laquo;" ;
 		var gameCredit = "Un jeu conçu et réalisé par : <br/>Stéphanie Mader" ;
 		var gameThanks = "Remerciements : <br/> ;)" ;
 
@@ -83,7 +84,7 @@
 		titleData.callTitle = "APPEL EN COURS..." ;
 
 		/*change of caller app prompt for each sequence*/
-		var promptDefault = "Rien à demander, ne pas les déranger." ;
+		var promptDefault = "" ;
 		var prompt = [] ;
 		prompt[0] = "" ;
 		prompt[1] = "" ;

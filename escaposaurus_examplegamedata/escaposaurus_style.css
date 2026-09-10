@@ -57,11 +57,12 @@ video{max-width: 960px;}
 	position:relative;
 }
 
-#container-homeMission{
-	width:800px;
-	background-color:white;
-	margin-top:20px;
-	padding-bottom:20px;
+#container-homeMission {
+    width: 800px;
+    background-color: white;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
 }
 
 #div-homeMission{
