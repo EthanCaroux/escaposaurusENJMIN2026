@@ -573,6 +573,8 @@ function closeVideoWindow(parentElem){
 		x.removeChild(x.lastChild);
 	}
 
+	
+
 	playBackgroundMusic();
 }
 

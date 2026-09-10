@@ -11,7 +11,10 @@
 /*by default there is no margin or padding anywhere*/
 *{ margin: 0px; padding: 0px; }
 a{color:#454444;}
-body{font-family: Arial;}
+body{
+	font-family: Arial;
+	overflow-y: hidden;
+}
 
 /*on veut la lightbox devant*/
 .lightbox-container {
