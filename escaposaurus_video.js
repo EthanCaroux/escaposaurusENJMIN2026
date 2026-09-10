@@ -21,6 +21,8 @@ var gameStart = false ;
 var backgroundMusicPlayer = new Audio("./music.mp3");
 var cutMusicPlayer = new Audio("./cutmusic.mp3");
 
+var currentKimono = "kimonoApp0"
+
 
 /*
 	FIRST FUNCTION CALLED UPON WINDOWS LOADED TO PREPARE THE GAME
@@ -596,12 +598,42 @@ function closeIt(nameId){
 	TinyStato.logThis(11, "closeit", nameId, sequenceNumber) ;
 }
 
+function getToNextKimono(){
+	if(currentKimono == "kimonoApp0"){
+		var kimono = document.getElementById("kimonoApp0");
+		kimono.id = ("kimonoApp1");
+		currentKimono = ("kimonoApp1");
+	}
+	else if(currentKimono == "kimonoApp1"){
+		var kimono = document.getElementById("kimonoApp1");
+		kimono.id = ("kimonoApp2");
+		currentKimono = ("kimonoApp2");
+	}
+	else if(currentKimono == "kimonoApp2"){
+		var kimono = document.getElementById("kimonoApp2");
+		kimono.id = ("kimonoApp3");
+		currentKimono = ("kimonoApp3");
+	}
+	else if(currentKimono == "kimonoApp3"){
+		var kimono = document.getElementById("kimonoApp3");
+		kimono.id = ("kimonoApp4");
+		currentKimono = ("kimonoApp4");
+	}
+	else if(currentKimono == "kimonoApp4"){
+		var kimono = document.getElementById("kimonoApp4");
+		kimono.id = ("kimonoApp5");
+		currentKimono = ("kimonoApp5");
+	}
+
+	
+	
+}
 
 /*progression, beggining, and end specific event*/
 function changingSequence(){
 	sequenceNumber++ ;
 
-
+	getToNextKimono();
 
 	if(sequenceNumber >= sequenceWin){
 		TinyStato.logThis(2, "win", "", sequenceNumber) ;

@@ -40,7 +40,7 @@ video{max-width: 960px;}
 	text-align: center;
 	position:relative;
 	
-	background: url(img/background.jpg);
+	background: url(img/background.png);
 	background-position: center;
 	background-color:#7D5F34;
 	background-repeat: no-repeat;
@@ -99,6 +99,90 @@ video{max-width: 960px;}
 .app-title-span{
 	font-family: Odibee ;
 	font-size:30px;
+}
+
+#kimonoApp0 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono0.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+
+#kimonoApp1 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono1.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+
+#kimonoApp2 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono2.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+
+#kimonoApp3 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono3.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+
+#kimonoApp4 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono4.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
+}
+
+#kimonoApp5 {
+	width: 250px;
+	height: 200px;
+	padding: 0 0 0 0;
+	margin: 50 500 12 50;
+	background-color: #fff;
+	#border: 2px solid black;
+	overflow: auto;
+	background: url("img/kimono5.png") center no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+  	overflow-y: hidden;
 }
 
 /*call app*/
