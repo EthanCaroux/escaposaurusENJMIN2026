@@ -303,7 +303,7 @@ function playAudio(audioSource)
 }
 
 function playBackgroundMusic(){
-	backgroundMusicPlayer.volume = (0.6);
+	backgroundMusicPlayer.volume = (0.8);
 	backgroundMusicPlayer.currentTime = 0;
 	backgroundMusicPlayer.play();
 }
