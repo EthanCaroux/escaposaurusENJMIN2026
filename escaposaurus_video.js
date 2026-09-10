@@ -29,9 +29,9 @@ function loadDataIntoHTML(){
 	document.title = gameTitle ;
 	document.getElementById("home-gameTitle").innerHTML = gameTitle ;
 	document.getElementById("home-gameDescription").innerHTML = gameDescriptionHome ;
-	document.getElementById("home-mission").innerHTML = gameMissionCall ;
+	/*document.getElementById("home-mission").innerHTML = gameMissionCall ;*/
 	document.getElementById("overlay-btn").innerHTML = gameMissionAccept ;
-	document.getElementById("vid-overlay").src = missionVideoPath ;
+	/*document.getElementById("vid-overlay").src = missionVideoPath ;*/
 
 	document.getElementById("added").innerHTML = finalStepAdded ;
 
@@ -49,7 +49,7 @@ function loadDataIntoHTML(){
 
 
 function closeOverlay(overlay){
-	document.getElementById("vid-overlay").pause() ;
+	/*document.getElementById("vid-overlay").pause() ;*/
 	if(gameStart===false){
 		if(isLocal === true){
 			startGameLocally(overlay)  ;

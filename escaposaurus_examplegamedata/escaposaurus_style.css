@@ -65,8 +65,8 @@ video{max-width: 960px;}
 }
 
 #div-homeMission{
-	background-color:#dcdcdc;
-	border:2px solid #7D5F34;
+	#background-color:#dcdcdc;
+	#border:2px solid #7D5F34;
 	padding:5px;
 }
 
@@ -133,7 +133,7 @@ video{max-width: 960px;}
 }
 
 .contact-div:hover{
-	background:#1022CC;
+	background:#D8D65B6B;
 	cursor: pointer;
 	color:fff;
 }
@@ -252,7 +252,7 @@ video{max-width: 960px;}
 	background: url("img/phone.png") center no-repeat ;
 	background-size: contain;
 	width:215px;
-	height:215px;
+	height:230px;
 
 	display: flex;
   	justify-content: center;
@@ -287,10 +287,20 @@ video{max-width: 960px;}
 #message-window button,
 #nocall-window button,
 #solution-window button,
-#credit-window button,
-#overlay-index button{
+#credit-window button{
 	color:#fff;
 	background-color: #1022CC;
+	border: none;
+	padding:3px;
+	margin:3px;
+	font-family: Roboto ;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#overlay-index button{
+	color:#fff;
+	background-color: #6B5736;
 	border: none;
 	padding:3px;
 	margin:3px;
@@ -317,8 +327,8 @@ video{max-width: 960px;}
 	background: url("img/phonehandle.png") center no-repeat ;
 	background-size: contain;
 	vertical-align: top;
-	height : 25px;
-	width: 75px;
+	height : 100px;
+	width: 175px;
 }
 
 #calling-phone-window button:hover{
@@ -336,10 +346,15 @@ video{max-width: 960px;}
 #message-window button:hover,
 #nocall-window button:hover,
 #solution-window button:hover,
-#credit-window button:hover,
-#overlay-index button:hover{
+#credit-window button:hover{
 	background-color: #fff;
 	color:#000;
+	cursor: pointer;
+}
+
+#overlay-index button:hover{
+	background-color: #9f7d47;
+	color:#ffffff;
 	cursor: pointer;
 }
 
