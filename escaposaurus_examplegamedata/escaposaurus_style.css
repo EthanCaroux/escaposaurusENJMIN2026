@@ -87,8 +87,11 @@ video{max-width: 960px;}
 /*shared style for app*/
 .app-title{
 	height:50px;
-	background-color: #7D5F34;
-	border:1px solid white;
+	background: url("img/woodtexture.png") center no-repeat ;
+	background-size:cover;
+	border: 2px;
+	border-style: solid;
+	border-color: #6B5736;
 	color: white;
 	text-align:center;
 }
@@ -194,7 +197,8 @@ video{max-width: 960px;}
 	width:100%;
 	height:100%;
 	border:1px solid white;
-	background-color:#000;
+	background: url("img/oldpapertexture.png") center no-repeat ;
+	background-size :cover;
 	text-align: center;
 }
 
@@ -205,8 +209,8 @@ video{max-width: 960px;}
 	z-index:305;
 	left:20%;
 	top:10%;
-	border:1px solid white;
-	background-color:#000;
+	#border:1px solid white;
+	#background-color:#000;
 	width:1000px;
 	left: 280px;
 	text-align: center;
@@ -222,8 +226,9 @@ video{max-width: 960px;}
 	z-index:300;
 	left:45%;
 	top:35%;
-	border:1px solid white;
-	background-color:#000;
+	border:1px solid #6B5736;
+	background: url("img/oldpapertexture.png") center no-repeat ;
+	background-size: cover;
 	width:200px;
 	left:580px;
 }
@@ -235,8 +240,9 @@ video{max-width: 960px;}
 	z-index:300;
 	left:45%;
 	top:35%;
-	border:1px solid white;
-	background-color:#000;
+	border:2px solid #6B5736;
+	background: url("img/oldpapertexture.png") center no-repeat ;
+	background-size: cover;
 	width:200px;
 	left:670px;
 }
@@ -246,8 +252,9 @@ video{max-width: 960px;}
 	z-index:300;
 	left:45%;
 	top:35%;
-	border:1px solid white;
-	background-color:#000;
+	border:2px solid #6B5736;
+	background: url("img/oldpapertexture.png") center no-repeat ;
+	background-size: cover;
 	width:200px;
 	left:580px;
 }
@@ -315,13 +322,35 @@ video{max-width: 960px;}
 #solution-window button,
 #credit-window button{
 	color:#fff;
-	background-color: #1022CC;
-	border: none;
+	border: 2px;
+	border-style: solid;
+	border-color: #6B5736;
+	background: url("img/woodtexture.png") center no-repeat ;
+	background-size:cover;
 	padding:3px;
 	margin:3px;
 	font-family: Roboto ;
 	font-size:14px;
 	font-weight:bold;
+	border-radius: 20px;
+	min-width : 10px;
+}
+
+.footer-button{
+	color:#d0cfcf;
+	background-color: #fff;
+	border: 2px;
+	border-style: solid;
+	border-color: #6B5736;
+	background: url("img/woodtexture.png") center no-repeat ;
+	background-size:cover;
+	margin-right:5px;
+	padding:3px;
+	font-family: Roboto ;
+	font-size:16px;
+	font-weight:bold;
+	border-radius: 25px;
+	min-width: 250px;
 }
 
 #overlay-index button{
@@ -373,8 +402,8 @@ video{max-width: 960px;}
 #nocall-window button:hover,
 #solution-window button:hover,
 #credit-window button:hover{
-	background-color: #fff;
-	color:#000;
+	background: url("img/woodtexturelight.png") center no-repeat ;
+	background-size:cover;
 	cursor: pointer;
 }
 
@@ -386,7 +415,7 @@ video{max-width: 960px;}
 
 .message-content{
 	text-align:center;
-	color:#fff;
+	color:#000000c3;
 	padding:5px;
 }
 

@@ -81,7 +81,7 @@ var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - conc
 		var titleData = {} ;
 		titleData.introTitle = "INTRODUCTION" ;
 		titleData.epilogueTitle = "EPILOGUE" ;
-		titleData.callTitle = "APPEL EN COURS..." ;
+		titleData.callTitle = "COMMUNICATION" ;
 
 		/*change of caller app prompt for each sequence*/
 		var promptDefault = "" ;
