@@ -583,7 +583,9 @@ short func to display/hide stuff
 */
 function openIt(nameId){
 	var mainElt = document.getElementById(nameId);
-	mainElt.style.animation = [animation.scaleIn, animation.fadeIn];
+	if(nameId != 'calling-letter-window'){
+		mainElt.style.animation = [animation.scaleIn, animation.fadeIn];
+	}
 	mainElt.classList.remove('hidden');
 	TinyStato.logThis(10, "openit", nameId, sequenceNumber) ;
 }
