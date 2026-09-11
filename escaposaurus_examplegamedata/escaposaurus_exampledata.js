@@ -45,19 +45,19 @@
 		  		{"foldername":"Etape 1 - Le modèle du kimono",
 				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau déchiré du kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
-				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
+				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":["Furisode"],"sequence":0,"othername":"Etape 2 - Le tissu utilisé",
 					"files": ["Echantillons tissu.png", "Première fiche descriptive des matériaux.png", "Seconde fiche descriptive des matériaux.png", "Photo officielle.png","Lettre passionelle.png","Haiku troublé.png"]
 			  	},
-				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":"Satin","sequence":1,"othername":"Etape 3 - La technique de reprisage",
+				{"foldername":"Choisir un tissu","squestion":"Quel matériau utiliser ?","password":["Satin"],"sequence":1,"othername":"Etape 3 - La technique de reprisage",
 					"files": ["Techniques de reprisage.png", "Outils de Adrien.png", "Photo austère.png","Lettre menaçante.png","Haiku frissonnant.png"]
 			  	},
-				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":"Kaketsugi","sequence":2,"othername":"Etape 4 - L'élément principal du motif",
+				{"foldername":"Choisir une technique","squestion":"Quelle est la technique de reprisage adaptée ?","password":["Kaketsugi"],"sequence":2,"othername":"Etape 4 - L'élément principal du motif",
 			  		"files":["Kimono avant.png","Kimono arriere.png","Photo parfumée.png","Haiku désespéré.png"]
 			  	},
-				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":"Feuille","sequence":3,"othername":"Etape 5 - Le coupable",
+				{"foldername":"Transmettre une information à Hayashi Tadamasa","squestion":"Quel est le motif représenté sur le kimono ?","password":["Feuille","érable","Erable","Momiji"],"sequence":3,"othername":"Etape 5 - Le coupable",
 					"files": ["Photo romantique.png", "Lettre pathétique.png","Lettre funeste.png","Haiku abandonné.png"]
 			  	},
-				{"foldername":"Résoudre notre affaire","squestion":"Qui a détruit le kimono ?","password":"Sada Yacco","sequence":4,"othername":"Résoudre l'affaire",},
+				{"foldername":"Résoudre notre affaire","squestion":"Qui a détruit le kimono ?","password":["Sada Yacco","Sada","Yacco","Yacco Sada"],"sequence":4,"othername":"Résoudre l'affaire"},
 
 		 		],
 			"files":[
