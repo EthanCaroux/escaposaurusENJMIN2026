@@ -64,7 +64,7 @@
 				"Haiku_Enthousiaste.png"]}
 		} ;
 
-		var gameTitle = "Escaposaurus" ;
+		var gameTitle = "Une Geisha à Paris" ;
 		var gameDescriptionHome = "<B>1900, Paris.</B> <I>Vous êtes un habilleur - concepteur spécialisé en habillement traditionnel japonais. Par cette belle matinée de printemps, vous entrez dans votre bureau et ouvrez le colis que vous avez reçu de votre ami le commissaire d’art Hayashi Tadamasa. Que peut il bien vous vouloir ?</I> \n\n\n" ;
 		var gameSecondDescription = "L’interface dans laquelle vous allez évoluer représente votre bureau. L’arborescence sur votre droite représente la liste d’étapes à accomplir pour remplir votre mission. Accomplissez les étapes l’une après l’autre en renseignant le mot qui correspond à ce qui est attendu et pour pouvoir accéder à l’étape suivante."
 		var gameMissionCall = "Voici la vidéo qu'Albert a envoyé à votre bureau d'informaticien spécialisé en récupération de données";
