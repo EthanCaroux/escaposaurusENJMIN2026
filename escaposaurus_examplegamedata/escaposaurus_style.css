@@ -380,7 +380,6 @@ video{max-width: 960px;}
 }
 
 #notnowPrompt-window button,
-#passPrompt-window button,
 #wrongPassword button,
 #newContact-window button,
 #UIvid-window button,
@@ -398,8 +397,25 @@ video{max-width: 960px;}
 	padding:3px;
 	margin:3px;
 	font-family: Roboto ;
-	font-size:14px;
-	font-weight:bold;
+	font-size:18px;
+	font-weight: bolder;
+	border-radius: 20px;
+	min-width : 140px;
+	min-height : 40px;
+}
+
+#passPrompt-window button{
+	color:#fff;
+	border: 2px;
+	border-style: solid;
+	border-color: #6B5736;
+	background: url("img/woodtexture.png") center no-repeat ;
+	background-size:cover;
+	padding:3px;
+	margin:3px;
+	font-family: Roboto ;
+	font-size:15px;
+	font-weight: bolder;
 	border-radius: 20px;
 	min-width : 40px;
 }
