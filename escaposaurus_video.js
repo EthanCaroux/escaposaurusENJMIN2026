@@ -199,8 +199,7 @@ function arborescence(folders, files, parent, fullpath){
 	if(folders !== null){
 		for (var i = 0; i < folders.length; i++){
 		    var obj = folders[i];
-		    console.log("a folder" + obj.foldername) ;
-		    var password = (obj.password == undefined)?"":obj.password;
+		    var password = (obj.password == undefined)?[""]:obj.password;
 		    var seqNumber = (obj.password == undefined)?"":obj.sequence;
 			var squestion = (obj.squestion == undefined) ? "" : obj.squestion;
 			var othername = (obj.othername == undefined) ? "" : obj.othername;
@@ -411,24 +410,26 @@ function unlockFolder(unlockedFolder){
 }
 
 function isItPasswordProtected(foldername){
-	if(passwordCenter[foldername] != null
-		&& passwordCenter[foldername] != ""){
+	if(passwordCenter[foldername] != null && passwordCenter[foldername] != ""){
 		return true;
 	}else{
 		return false;
 	}
 }
 
-function doThePasswordMatch(userTry, foldername){
-	var userTryCleared = userTry.replace(/[^a-z0-9]/gi, '') ;
-	var passwordCleared = passwordCenter[foldername].replace(/[^a-z0-9]/gi, '') ;
+function doThePasswordMatch(userTry, foldername) {
+	for (var i = 0; i < passwordCenter[foldername].length; i++)
+	{
+		var userTryCleared = userTry.replace(/[^a-z0-9]/gi, '');
+		var passwordCleared = passwordCenter[foldername][i].replace(/[^a-z0-9]/gi, '');
+		console.log(passwordCleared);
 
-	if(isItPasswordProtected(foldername)
-		&& passwordCleared.toLowerCase() == userTryCleared.toLowerCase()){
-		return true;
-	}else{
-		return false;
+		if (isItPasswordProtected(foldername) && passwordCleared.toLowerCase() == userTryCleared.toLowerCase())
+		{
+			return true;
+		}
 	}
+	return false;
 }
 
 function checkIfEnter(e, userTry, foldername){
