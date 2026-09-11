@@ -20,6 +20,7 @@ var gameStart = false ;
 
 var backgroundMusicPlayer = new Audio("./music.mp3");
 var cutMusicPlayer = new Audio("./cutmusic.mp3");
+var ringMusicPlayer = new Audio('./ring.mp3');
 
 var currentKimono = "kimonoApp0"
 
@@ -313,6 +314,17 @@ function pauseBackgroundMusic(){
 	backgroundMusicPlayer.pause();
 }
 
+function startPhoneAudio(){
+	ringMusicPlayer.volume = (0.8);
+	ringMusicPlayer.currentTime = 0;
+	ringMusicPlayer.loop = true;
+	ringMusicPlayer.play();
+}
+
+function stopPhoneAudio(){
+	ringMusicPlayer.pause();
+}
+
 /*to lock folder after creating the udisk*/
 function lockFolders(){
 	for(i=0; i<lockedFolder.length;i++){
@@ -586,6 +598,9 @@ function openIt(nameId){
 	if(nameId != 'calling-letter-window'){
 		mainElt.style.animation = [animation.scaleIn, animation.fadeIn];
 	}
+	if(nameId == 'calling-phone-window'){
+		startPhoneAudio('./ring.mp3');
+	}
 	mainElt.classList.remove('hidden');
 	TinyStato.logThis(10, "openit", nameId, sequenceNumber) ;
 }
@@ -593,6 +608,10 @@ function openIt(nameId){
 function closeIt(nameId){
 	var mainOElt = document.getElementById(nameId);
 	mainOElt.classList.add('hidden') ;
+
+	if(nameId == 'calling-phone-window'){
+		stopPhoneAudio();
+	}
 
 	/* need a callback on animation to work
 	mainOElt.style.animation = [animation.scaleOut, animation.fadeOut];
