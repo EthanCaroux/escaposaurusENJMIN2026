@@ -332,8 +332,12 @@ video{max-width: 960px;}
 	background: url("img/letter.png") center no-repeat ;
 	background-size: contain;
 	width:230px;
-	height:170px;
+	height:154px;
 	left: 659px;
+
+	border: 3px;
+	border-color: yellow;
+	border-style: dashed;	
 
 	display: flex;
   	justify-content: center;
