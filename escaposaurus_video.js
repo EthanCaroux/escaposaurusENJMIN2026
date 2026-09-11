@@ -599,7 +599,10 @@ function openIt(nameId){
 		mainElt.style.animation = [animation.scaleIn, animation.fadeIn];
 	}
 	if(nameId == 'calling-phone-window'){
-		startPhoneAudio('./ring.mp3');
+		startPhoneAudio();
+	}
+	if(nameId == 'calling-letter-window'){
+		playAudio('./PAPER.mp3');
 	}
 	mainElt.classList.remove('hidden');
 	TinyStato.logThis(10, "openit", nameId, sequenceNumber) ;
