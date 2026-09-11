@@ -43,7 +43,7 @@
 	  		"folders":
 		  		[
 		  		{"foldername":"Etape 1 - Le modèle du kimono",
-				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Echantillon de tissu.png","Patrons kimonos.png","Haiku rêveur.png"]
+				  	"files":["Affiche romantique.png","Affiche sublime.png","Affiche spectaculaire.png","Morceau déchiré du kimono.png","Patrons kimonos.png","Haiku rêveur.png"]
 				},
 				{"foldername":"Choisir un modèle de kimono","squestion":"Quel modèle de Kimono choisir ?","password":"Furisode","sequence":0,"othername":"Etape 2 - Le tissu utilisé",
 					"files": ["Echantillons tissu.png", "Première fiche descriptive des matériaux.png", "Seconde fiche descriptive des matériaux.png", "Photo officielle.png","Lettre passionelle.png","Haiku troublé.png"]
